@@ -5,20 +5,167 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="sass/style.css">
-	<title>Document</title>
+	<link rel="icon" type="image/x-icon" href="./assets/svg/favicon.ico">
+	<title>Travel-layout_WWWolkodaWWW</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Magra:wght@700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div class="1">
-		<a href="#"><img src="./assets/svg/plane.svg" alt="plane"></a>
-		<a href="#"><img src="./assets/svg/bike.svg" alt="plane"></a>
-		<a href="#"><img src="./assets/svg/cal.svg" alt="plane"></a>
-		<a href="#"><img src="./assets/svg/face.svg" alt="plane"></a>
-		<a href="#"><img src="./assets/svg/git.svg" alt="plane"></a>
-		<a href="#"><img src="./assets/svg/google.svg" alt="plane"></a>
-		<a href="#"><img src="./assets/svg/insta.svg" alt="plane"></a>
-		<a href="#"><img src="./assets/svg/logo.svg" alt="plane"></a>
-		<a href="#"><img src="./assets/svg/twit.svg" alt="plane"></a>
-		<a href="#"><img src="./assets/svg/vid.svg" alt="plane"></a>
-	</div>
+	<header class="header">
+		<div class="wrapper">
+			<div class="header__logo">
+				<a href="#" class="logo_link">
+					<img src="./assets/svg/logo.svg" alt="logo">
+					<span class="logo_description">Travel Portal</span>
+				</a>
+			</div>
+			<nav class="header__navigation">
+				<ul class="navigation">
+					<li class="navigation_menu">
+						<a href="#" class="navigation_link">how it works</a>
+					</li>
+					<li class="navigation_menu">
+						<a href="#" class="navigation_link">plan your trip</a>
+					</li>
+					<li class="navigation_menu">
+						<a href="#" class="navigation_link">destination</a>
+					</li>
+					<li class="navigation_menu">
+						<a href="#" class="navigation_link">travel stories</a>
+					</li>
+				</ul>
+			</nav>
+			<button class="btn login_btn">login</button>
+		</div>		
+	</header>
+	<main class="main">
+		<section class="explore">
+			<div class="explore__content">
+				<h1 class="explore_title">Explore the beauty of the World</h1>
+				<p class="explore_description">Receive personalized recommendations for countries, hotels, activities and more</p>
+			</div>
+			<div class="explore__planning">
+				<p class="planning_title">What would you like to do?</p>
+				<button class="btn planning_btn">start planning</button>
+			</div>
+		</section>
+		<section class="steps">
+			<h2 class="steps__title">3 steps to the perfect trip</h2>
+			<div class="steps__content layout-3-columns">
+				<div class="step">
+					<img src="./assets/svg/bike.svg" alt="image" class="step_image">
+					<h6 class="step_description">Tell us what you want to do</h6>
+				</div>
+				<div class="step">
+					<img src="./assets/svg/cal.svg" alt="image" class="step_image">
+					<h6 class="step_description">Share us preferable dates</h6>
+				</div>
+				<div class="step">
+					<img src="./assets/svg/plane.svg" alt="image" class="step_image">
+					<h6 class="step_description">We will give you recommendations</h6>
+				</div>
+			</div>
+		</section>
+		<section class="destinations">
+			<h2 class="destinations__title">popular destinations</h2>
+			<div class="destinations__slider">
+				<div class="slider__cards">
+					<div class="card card_spain">
+						<h3 class="slider_title">spain</h3>
+					</div>
+					<div class="card card_japan">
+						<h3 class="slider_title">japan</h3>
+					</div>
+					<div class="card card_usa">
+						<h3 class="slider_title">usa</h3>
+					</div>
+				</div>
+				<div class="slider__pagination">
+					<span class="pagination"></span>
+					<span class="pagination"></span>
+					<span class="pagination"></span>
+				</div>
+			</div>
+			<button class="btn destinations_btn">find more</button>
+		</section>
+		<section class="stories">
+			<h2 class="stories__title">travel stories</h2>
+			<div class="stories__content">
+				<div class="story">
+					<div class="story__image">
+						<img src="./assets/img/st-1.jpg" alt="story-image">
+					</div>
+					<div class="story__description">
+						<h4 class="story_title">10 Photos of Attractive Thailand</h4>
+						<p class="story_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+						<a href="#" class="story_link">Read More</a>
+					</div>
+				</div>
+				<div class="story">
+					<div class="story__image">
+						<img src="./assets/img/st-2.jpg" alt="story-image">
+					</div>
+					<div class="story__description">
+						<h4 class="story_title">Canyonlands National Park, Utah</h4>
+						<p class="story_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+						<a href="#" class="story_link">Read More</a>
+					</div>
+				</div>
+				<div class="story">
+					<div class="story__image">
+						<img src="./assets/img/st-3.jpg" alt="story-image">
+					</div>
+					<div class="story__description">
+						<h4 class="story_title">I left my heart in the Mountains!</h4>
+						<p class="story_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+						<a href="#" class="story_link">Read More</a>
+					</div>
+				</div>
+				<div class="story">
+					<div class="story__image">
+						<img src="./assets/img/st-4.jpg" alt="story-image">
+					</div>
+					<div class="story__description">
+						<h4 class="story_title">The Longest journey in my life!</h4>
+						<p class="story_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+						<a href="#" class="story_link">Read More</a>
+					</div>
+				</div>
+				<button class="btn stories_btn">see more</button>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="footer__content">All Rights Reserved © Travel Portal</div>
+		<ul class="footer__links">
+			<li class="link">
+				<a class="link" href="https://github.com/WWWolkodaWWW">
+					<img src="./assets/svg/git.svg" alt="link-image" class="link_image github">
+				</a>
+			</li>
+			<li class="link">
+				<a class="link" href="#">
+					<img src="./assets/svg/insta.svg" alt="link-image" class="link_image insta">
+				</a>
+			</li>
+			<li class="link">
+				<a class="link" href="#">
+					<img src="./assets/svg/vid.svg" alt="link-image" class="link_image youtube">
+				</a>
+			</li>
+			<li class="link">
+				<a class="link" href="#">
+					<img src="./assets/svg/twit.svg" alt="link-image" class="link_image twitter">
+				</a>
+			</li>
+		</ul>
+	</footer>
 </body>
 </html>
