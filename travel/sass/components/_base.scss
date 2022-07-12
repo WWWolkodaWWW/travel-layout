@@ -1,0 +1,12 @@
+html {
+	font-size: 10px;
+}
+
+body {
+	font-family: $font-primary;
+}
+
+.wrapper {
+	max-width: $desktop-width;
+	margin: 0 auto;
+}
