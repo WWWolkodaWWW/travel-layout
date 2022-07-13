@@ -1,0 +1,34 @@
+$color-primary: #0D606F;
+$color-priary-alfa: rgba(13, 96, 111, 0.5);
+$color-additional: #F2785C;
+$color-additional-alfa: rgba(242, 120, 92, 0.5);
+$color-light: #FFFFFF;
+
+$header-background: rgba(242, 120, 92, 0.7);
+$divider: 1px solid rgba(13, 96, 111, 0.5);
+$popup-gradient: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+
+$header-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+$story-card-shadow: 0px 4px 4px rgba(13, 96, 111, 1);
+$popup-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+$login-btn-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+$large-btn-shadow:0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+$input-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+$text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+
+$font-primary: 'Aleo', serif;
+$font-additional: 'Red Hat Text', sans-serif;
+$font-logo: 'Magra', sans-serif;
+
+$desktop-width: 1440px;
+
+$svg-filter: invert(27%) sepia(12%) saturate(4862%) hue-rotate(149deg) brightness(97%) contrast(90%);
+
+@mixin font ($size, $weight: 400, $height, $style: normal) {
+	font-size: $size;
+	font-weight: $weight;
+	line-height: $height;
+	font-style: $style;
+};
+
