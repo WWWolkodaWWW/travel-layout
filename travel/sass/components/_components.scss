@@ -10,12 +10,14 @@ body {
 .wrapper {
 	max-width: $desktop-width;
 	margin: 0 auto;
+	padding: 2.5rem 12rem;
 }
 
 .btn {
 	border-radius: 1rem;
 	background: $color-primary;
 	text-transform: capitalize;
+	border: 2px solid red;
 }
 
 
@@ -24,8 +26,18 @@ body {
 		@include font ($size: 1.6rem, $weight: 400, $height: 2.1rem);
 		color: $color-light;
 		font-family: $font-additional;		
-		padding: 1rem 3rem;
+		padding: 0.8rem 3rem;
 		box-shadow: $login-btn-shadow;
 	}
 }
 
+.planning {
+	&_btn {
+
+	}
+}
+
+h1 {
+	@include font ($size: 8rem, $weight: 700, $height: 9.6rem);
+	color: $color-light;
+}
