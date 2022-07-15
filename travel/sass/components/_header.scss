@@ -2,7 +2,6 @@
 	background: rgba(242, 120, 92, 0.7);
     box-shadow: 0px 4px 4px rgb(13 96 111 / 50%);
     position: absolute;
-    height: 9rem;
     width: 100%;
     top: 0;
 
@@ -32,7 +31,7 @@
 		justify-content: space-between;
 		align-items: center;
 		flex-direction: row;
-		
+		height: 9rem;
 	}
 
 	&__logo {

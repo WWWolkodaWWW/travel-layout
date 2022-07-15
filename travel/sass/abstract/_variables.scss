@@ -21,9 +21,11 @@ $font-primary: 'Aleo', serif;
 $font-additional: 'Red Hat Text', sans-serif;
 $font-logo: 'Magra', sans-serif;
 
-$desktop-width: 1440px;
+$desktop-width: 1200px;
 
 $svg-filter: invert(27%) sepia(12%) saturate(4862%) hue-rotate(149deg) brightness(97%) contrast(90%);
+
+$h1FontSize: calc(50px + 30 * (100vw / 1440));
 
 @mixin font ($size, $weight: 400, $height, $style: normal) {
 	font-size: $size;
