@@ -1,0 +1,26 @@
+.steps {
+	padding: 8rem 13rem 0 13rem;
+	padding: 8rem calc((100vw - 1440px) / 2) 0 calc((100vw - 1440px) / 2);
+
+	&__title {
+		padding: 0 0 4rem 0;
+	}
+
+	&__content {
+		justify-content: center;
+	}
+}
+
+.step {
+	align-items: center;
+    display: flex;
+    flex-direction: column;
+	row-gap: 3rem;
+	text-align: center;
+
+	&_image {
+	}
+
+	&_description {
+	}
+}

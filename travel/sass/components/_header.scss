@@ -1,10 +1,14 @@
 .header {
-	background: rgba(242, 120, 92, 0.7);
+	background: $header-background;
     box-shadow: 0px 4px 4px rgb(13 96 111 / 50%);
     position: absolute;
     width: 100%;
     top: 0;
 
+	@media screen and (max-width: $tablet-width) {
+		background: $header-background-tablet;
+		box-shadow: none;
+	}
 
 	// background: linear-gradient(0deg, $header-background, $header-background), url(../../assets/img/bg-primary.jpg) no-repeat center 0px / cover;
 	// box-shadow: $header-shadow;
@@ -32,6 +36,10 @@
 		align-items: center;
 		flex-direction: row;
 		height: 9rem;
+		
+		@media screen and (max-width: $desktop-width) {
+			padding: 0 1.5rem;
+		}
 	}
 
 	&__logo {
@@ -43,6 +51,9 @@
 		font-family: $font-additional;
 		text-transform: capitalize;
 
+		@media screen and (max-width: $tablet-width) {
+			display: none;
+		}
 	}
 }
 
@@ -58,6 +69,10 @@
 		font-family: $font-logo;
 		@include font ($size: 3.2rem, $weight: 700, $height: 3.9rem);
 		color: $color-light;
+
+		@media screen and (max-width: $tablet-width) {
+			display: none;
+		}
 	}
 }
 

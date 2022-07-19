@@ -5,6 +5,7 @@ $color-additional-alfa: rgba(242, 120, 92, 0.5);
 $color-light: #FFFFFF;
 
 $header-background: rgba(242, 120, 92, 0.7);
+$header-background-tablet: linear-gradient(180deg, #0D606F 0%, rgba(13, 96, 111, 0) 100%);
 $divider: 1px solid rgba(13, 96, 111, 0.5);
 $popup-gradient: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
 
@@ -22,11 +23,15 @@ $font-additional: 'Red Hat Text', sans-serif;
 $font-logo: 'Magra', sans-serif;
 
 $desktop-width: 1200px;
+$tablet-width: 900px;
+$mobile-width: 390px;
 
 $svg-filter: invert(27%) sepia(12%) saturate(4862%) hue-rotate(149deg) brightness(97%) contrast(90%);
 
 $h1FontSize: calc(50px + 30 * (100vw / 1440));
-$h2FontSize: calc(50px + 30 * (100vw / 1440));
+$h2FontSize: calc(14px + 26 * (100vw / 1440));
+$h3FontSize: calc(20px + 12 * (100vw / 1440));
+$h6FontSize: calc(10px + 10 * (100vw / 1440));
 
 @mixin font ($size, $weight: 400, $height, $style: normal) {
 	font-size: $size;
@@ -35,3 +40,10 @@ $h2FontSize: calc(50px + 30 * (100vw / 1440));
 	font-style: $style;
 };
 
+@mixin columns ($width) {
+	display: flex;
+	justify-content: space-between;
+	* {
+		flex-basis: $width;
+	}
+};

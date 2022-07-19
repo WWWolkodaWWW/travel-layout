@@ -1,0 +1,35 @@
+.destinations {
+
+	&__title {
+	}
+
+	&__slider {
+	}
+}
+.slider {
+	max-width: 1440px;
+    overflow-x: hidden;
+
+	&_title {
+		position: absolute;
+    bottom: 4rem;
+    left: 1.5rem;
+	}
+
+	&__cards {
+		display: flex;
+		flex-direction: row;
+		column-gap: 20px;
+		justify-content: center;
+	}
+
+	&__pagination {
+	}
+}
+.card {
+	position: relative;
+
+	& > img {
+		border-radius: 16px;
+	}
+}
