@@ -31,7 +31,10 @@ $svg-filter: invert(27%) sepia(12%) saturate(4862%) hue-rotate(149deg) brightnes
 $h1FontSize: calc(50px + 30 * (100vw / 1440));
 $h2FontSize: calc(14px + 26 * (100vw / 1440));
 $h3FontSize: calc(20px + 12 * (100vw / 1440));
+$h4FontSize: calc(24px + 11 * (100vw / 1440));
 $h6FontSize: calc(10px + 10 * (100vw / 1440));
+
+$sliderHeight: calc(600px + 200px * (100% / 800px));
 
 @mixin font ($size, $weight: 400, $height, $style: normal) {
 	font-size: $size;
