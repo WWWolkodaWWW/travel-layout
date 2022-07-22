@@ -368,6 +368,46 @@ section {
   background: #0D606F;
   text-transform: capitalize;
   border: 2px solid #0D606F;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+}
+.btn:hover {
+  background-color: #0D606F;
+  color: #0D606F;
+  transform: translateY(-15%);
+  box-shadow: 0 15px 15px -10px rgba(13, 96, 111, 0.5);
+}
+.btn:hover:hover {
+  cursor: url(/assets/svg/cursor-dark.svg), auto;
+}
+.btn > span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: #FFFFFF;
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--num) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--num) - 1) * 0.1s);
+  z-index: -1;
+}
+.btn:hover > span {
+  transform: translateY(0) scale(2);
+}
+.btn > span:nth-child(1) {
+  --num: 1;
+}
+.btn > span:nth-child(2) {
+  --num: 2;
+}
+.btn > span:nth-child(3) {
+  --num: 3;
+}
+.btn > span:nth-child(4) {
+  --num: 4;
 }
 .btn_login {
   font-size: 1.6rem;
@@ -378,6 +418,9 @@ section {
   font-family: "Red Hat Text", sans-serif;
   padding: 0.8rem 3rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+}
+.btn_login:hover {
+  cursor: url(/assets/svg/cursor-dark.svg), auto;
 }
 @media screen and (max-width: 900px) {
   .btn_login {
@@ -402,46 +445,6 @@ section {
 .btn_pagination.active {
   background-color: #F2785C;
 }
-.btn_stories {
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  transition: 0.5s;
-}
-.btn_stories:hover {
-  background-color: #0D606F;
-  color: #0D606F;
-  transform: translateY(-15%);
-  box-shadow: 0 15px 15px -10px rgba(13, 96, 111, 0.5);
-}
-.btn_stories > span {
-  position: absolute;
-  width: 25%;
-  height: 100%;
-  background-color: #FFFFFF;
-  transform: translateY(150%);
-  border-radius: 50%;
-  left: calc((var(--num) - 1) * 25%);
-  transition: 0.5s;
-  transition-delay: calc((var(--num) - 1) * 0.1s);
-  z-index: -1;
-}
-.btn_stories:hover > span {
-  transform: translateY(0) scale(2);
-}
-.btn_stories > span:nth-child(1) {
-  --num: 1;
-}
-.btn_stories > span:nth-child(2) {
-  --num: 2;
-}
-.btn_stories > span:nth-child(3) {
-  --num: 3;
-}
-.btn_stories > span:nth-child(4) {
-  --num: 4;
-}
-
 .header__burger {
   display: none;
 }
