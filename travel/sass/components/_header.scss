@@ -10,25 +10,6 @@
 		box-shadow: none;
 	}
 
-	// background: linear-gradient(0deg, $header-background, $header-background), url(../../assets/img/bg-primary.jpg) no-repeat center 0px / cover;
-	// box-shadow: $header-shadow;
-	// height: 9rem;
-	// background-repeat: no-repeat;
-	// background-position: top center;
-	// background-size: cover;
-	// position: relative;
-
-	// &::after {
-	// 	content: '';
-	// 	position: absolute;
-	// 	top: 0;
-	// 	left: 0;
-	// 	width: 100%;
-	// 	height: 100%;
-	// 	background: $header-background;
-	// 	z-index: 2;
-	// 	box-shadow: $header-shadow;
-	// }
 
 	&__wrapper {
 		display: flex;
@@ -43,6 +24,11 @@
 	}
 
 	&__logo {
+
+		&:hover {
+			cursor: url(/assets/svg/cursor-orange.svg), auto;
+			filter: $svg-filter;			
+		}
 	}
 
 	&__navigation {
@@ -63,6 +49,10 @@
 		display: flex;
 		align-items: center;
 		gap: 0.6rem;
+
+		&:hover {
+			cursor: url(/assets/svg/cursor-white.svg), auto;
+		}
 	}
 
 	&_description {
@@ -84,6 +74,10 @@
 	&__menu {
 
 		&_link {
+			&:hover {
+				cursor: url(/assets/svg/cursor-white.svg), auto;
+				color: $color-primary;
+			}
 		}
 	}
 }

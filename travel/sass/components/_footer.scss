@@ -1,0 +1,28 @@
+.footer {
+	background-color: cadetblue;
+	@include font ($size: 1.6rem, $weight: 400, $height: 2.1rem);
+
+	&__content {
+		display: flex;
+	}
+
+	&__copyright {
+	}
+
+	&__links {
+		display: flex;
+	}
+}
+.link {
+
+	&_image {
+	}
+}
+.github {
+}
+.insta {
+}
+.youtube {
+}
+.twitter {
+}

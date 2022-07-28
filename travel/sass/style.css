@@ -345,6 +345,10 @@ input, textarea {
   outline: none;
 }
 
+:hover {
+  transition: 0.5s ease-in-out;
+}
+
 html {
   font-size: 10px;
 }
@@ -541,6 +545,10 @@ h6 {
     padding: 0 1.5rem;
   }
 }
+.header__logo:hover {
+  cursor: url(/assets/svg/cursor-orange.svg), auto;
+  filter: invert(73%) sepia(12%) saturate(4862%) hue-rotate(149deg) brightness(97%) contrast(90%);
+}
 .header__navigation {
   font-size: 1.6rem;
   font-weight: 400;
@@ -561,6 +569,9 @@ h6 {
   align-items: center;
   gap: 0.6rem;
 }
+.logo_link:hover {
+  cursor: url(/assets/svg/cursor-white.svg), auto;
+}
 .logo_description {
   font-family: "Magra", sans-serif;
   font-size: 3.2rem;
@@ -579,6 +590,11 @@ h6 {
   display: flex;
   gap: 4rem;
 }
+.navigation__menu_link:hover {
+  cursor: url(/assets/svg/cursor-white.svg), auto;
+  color: #0D606F;
+}
+
 .explore {
   background: url(../../assets/img/bg-primary.jpg) no-repeat center top/cover;
   min-height: 76.5rem;
@@ -721,6 +737,21 @@ h6 {
 }
 .story_link:hover {
   cursor: url(/assets/svg/cursor-orange.svg), auto;
+  color: #F2785C;
+}
+
+.footer {
+  background-color: cadetblue;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  font-style: normal;
+}
+.footer__content {
+  display: flex;
+}
+.footer__links {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
