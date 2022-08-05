@@ -5,11 +5,21 @@ html {
 body {
 	font-family: $font-primary;
 	color: $color-primary;
+	position: relative;
 }
 
 .wrapper {
 	max-width: $desktop-width;
 	margin: 0 auto;
+}
+
+.main {
+	// background: url(../../assets/img/bg-footer.jpg);
+	// background-repeat: no-repeat;
+	// background-position: bottom 0;
+	// background-size: cover;
+		// background: url(../../assets/img/bg-primary.jpg) no-repeat center top / cover;
+
 }
 
 section {

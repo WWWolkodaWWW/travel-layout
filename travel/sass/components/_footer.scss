@@ -1,21 +1,50 @@
 .footer {
-	background-color: cadetblue;
 	@include font ($size: 1.6rem, $weight: 400, $height: 2.1rem);
+	color: $color-light;
+	position: absolute;
+    bottom: 0;
+    z-index: 1;
 
 	&__content {
-		display: flex;
+		display: grid;
+		grid-template-columns: 1.5fr 1fr;
+
+		// padding: 1.5rem 0;
+		// display: flex;
+		// align-items: center;
+		// justify-content: flex-end;
 	}
 
 	&__copyright {
+		justify-self: end;
 	}
 
 	&__links {
 		display: flex;
+		column-gap: 2rem;
+		justify-self: end;
+		&:hover {
+			cursor: url(/assets/svg/cursor-orange.svg), auto;
+		}
+
+		
+		
 	}
 }
-.link {
+.links {
+
+	&:hover {
+		filter: $svg-filter-additional;
+		
+	}
 
 	&_image {
+	}
+}
+
+.link {
+	&:hover {
+		cursor: url(/assets/svg/cursor-orange.svg), auto;
 	}
 }
 .github {

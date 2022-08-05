@@ -1,10 +1,17 @@
 .stories {
-	// background-image: url(../../assets/img/bg-footer.jpg);
-	// background-repeat: no-repeat;
-	// background-position: 50px center;
+	
 	
 
 	&__title {
+	}
+
+	&__wrapper {
+		// background-image: url(../../assets/img/bg-footer.jpg);
+		// background-repeat: no-repeat;
+		// background-position: top center;
+		background: url(../../assets/img/bg-footer.jpg) no-repeat center top / cover;
+		margin: 4rem 0 0;
+		padding: 0 0 6rem 0;
 	}
 
 	&__content {
@@ -12,6 +19,8 @@
 		flex-direction: column;
 		row-gap: 3rem;
 		align-items: center;
+		background-color: rgba(255, 255, 255, 0.7);
+		padding: 4rem 12rem;
 	}
 }
 .story {
