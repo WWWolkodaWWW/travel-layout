@@ -38,10 +38,16 @@
 		text-transform: capitalize;
 
 		@media screen and (max-width: $tablet-width) {
-			display: none;
+			display: none;			
+		}
+
+		&.open {
+			display: block;		
 		}
 	}
 }
+
+
 
 .logo {
 
@@ -59,16 +65,30 @@
 		font-family: $font-logo;
 		@include font ($size: 3.2rem, $weight: 700, $height: 3.9rem);
 		color: $color-light;
-
-		@media screen and (max-width: $tablet-width) {
-			display: none;
-		}
 	}
 }
 
 .navigation {
 	display: flex;
 	gap: 4rem;
+
+	@media screen and (max-width: $tablet-width) {
+		flex-direction: column;
+		position: absolute;
+		right: 0;
+		top: 0;
+		background-color: $color-additional;
+		min-width: 165px;
+		min-height: 250px;
+		gap: 1rem;
+		align-items: flex-end;
+		justify-content: center;
+		padding-right: 15px;
+		z-index: 1;
+	}
+
+
+
 
 
 	&__menu {
@@ -79,6 +99,13 @@
 				color: $color-primary;
 			}
 		}
+
+		&_mobile {
+			display: none;
+			@media screen and (max-width: $tablet-width) {
+				display: block;			
+			}
+		} 
 	}
 }
 
