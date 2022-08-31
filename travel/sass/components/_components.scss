@@ -24,6 +24,10 @@ body {
 
 section {
 	padding: 8rem 0 0 0;
+
+	@media screen and (max-width: $mobile-width) {
+		padding: 2rem 0 0 0;
+	}
 }
 
 .btn {
@@ -100,14 +104,11 @@ section {
 		color: $color-light;
 		padding: 1rem 3rem;
 		box-shadow: $large-btn-shadow;
-	}
 
-	&_planning {
-
-	}
-
-	&_destinations {
-
+		@media screen and (max-width: $mobile-width) {
+			@include font ($size: 1.1rem, $weight: 500, $height: 1.4rem);
+			padding: 0.7rem 0.9rem;
+		}
 	}
 
 	&_pagination {
@@ -115,19 +116,35 @@ section {
 		height: 20px;
 		background-color: $color-additional-alfa;
 		border-radius: 50%;
-	}
+
+		@media screen and (max-width: $mobile-width) {
+			width: 8px;
+			height: 8px;
+		}
+	}	
 
 	&_pagination.active {
 		background-color: $color-additional;
 	}
 
-	&_stories {
-		
+	&_stories,
+	&_destinations {
+		@media screen and (max-width: $mobile-width) {
+			padding: 0.7rem 0.9rem 0.7rem 2.3rem;
+			background-image: url(../../assets/svg/btn_arrow_white.svg);
+			background-repeat: no-repeat;
+			background-position: 7px center;
+		}
 	}
 }
 
+.arrow {
 
-
+	&_left {
+		opacity: 0.7;
+		transform: rotate(-180deg);	
+	}
+}
 
 .header {
 	&__burger {
@@ -140,14 +157,32 @@ section {
 			width: 32px;
 			row-gap: 4px;
 			padding: 0 4px;
-			z-index: 2;
+			z-index: 3;
 		}
-		
 
 		&_line {
 			background-color: $color-light;
 			height: 3px;
 			width: 100%;
+		}
+
+		&.open {
+			transform: translate(-100px, -100%);
+			transition:all 0.5s cubic-bezier(0.25,0.1,0.25,1);
+
+			& > :nth-child(1) {
+				transform: translateY(0) rotate(45deg) scale(1.2, 1);
+				transition:all 1s cubic-bezier(0.25,0.1,0.25,1);
+			}
+
+			& > :nth-child(2) {
+				display: none;			
+			}
+
+			& > :nth-child(3) {
+				transform: translateY(-250%) rotate(-45deg) scale(1.2, 1);
+				transition:all 1s cubic-bezier(0.25,0.1,0.25,1);
+			}
 		}
 	}
 }

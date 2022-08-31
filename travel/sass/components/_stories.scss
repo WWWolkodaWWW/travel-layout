@@ -1,6 +1,4 @@
 .stories {
-	
-	
 
 	&__title {
 	}
@@ -21,14 +19,36 @@
 		align-items: center;
 		background-color: rgba(255, 255, 255, 0.7);
 		padding: 4rem 12rem;
+
+		@media screen and (max-width: $mobile-width) {
+			padding: 1rem 1.5rem;
+			row-gap: 1.5rem;
+		}
 	}
 }
 .story {
 	display: flex;
 	column-gap: 4rem;
 
+	@media screen and (max-width: $mobile-width) {
+		column-gap: 1rem;
+	}
+
 	&__image > img {
 		border-radius: 16px;
+		box-shadow: $story-card-shadow;
+
+		@media screen and (max-width: $mobile-width) {
+			display: none;
+		}
+
+		&:nth-child(2) {
+			display: none;
+
+			@media screen and (max-width: $mobile-width) {
+				display: block;
+			}
+		}
 	}
 
 	&__description {
@@ -36,10 +56,16 @@
 	}
 
 	&_title {
+		@media screen and (max-width: $mobile-width) {
+			font-size: 1.1rem;
+		}
 	}
 
 	&_subtitle {
 		@include font ($size: calc(9px + 11 * (100vw / 1440)), $weight: 400, $height: calc(calc(9px + 11 * (100vw / 1440)) * 1.2));
+		@media screen and (max-width: $mobile-width) {
+			font-size: 0.9rem;
+		}
 	}
 
 	&_link {

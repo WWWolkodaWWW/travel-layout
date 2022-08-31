@@ -4,6 +4,10 @@
 	row-gap: 40px;
 	align-items: center;
 
+	@media screen and (max-width: $mobile-width) {
+		row-gap: 20px;
+	}
+
 	&__title {
 	}
 
@@ -12,16 +16,31 @@
 		flex-direction: column;
 		align-items: center;
 		row-gap: 2.5rem;
+		position: relative;
+
+		@media screen and (max-width: $mobile-width) {
+			row-gap: 0;
+		}
 	}
 }
 .slider {
     overflow-x: hidden;
 	max-width: calc(100vw - 20px);
 
+
+	@media screen and (max-width: $mobile-width) {
+		max-width: calc(100vw - 20px);
+	}
+
 	&_title {
 		position: absolute;
-    bottom: 4rem;
-    left: 1.5rem;
+		bottom: 4rem;
+		left: 1.5rem;
+
+		@media screen and (max-width: $mobile-width) {
+			top: 1rem;
+			left: 1.5rem;
+		}
 	}
 
 	&__cards {
@@ -29,11 +48,33 @@
 		flex-direction: row;
 		column-gap: 20px;
 		justify-content: center;
+
+		@media screen and (max-width: $mobile-width) {
+			justify-content: flex-start;
+		}
 	}
 
 	&__pagination {
 		display: flex;
-	column-gap: 10px;
+		column-gap: 10px;
+
+		@media screen and (max-width: $mobile-width) {
+			column-gap: 6px;
+			position: absolute;
+			bottom: 5%;
+		}
+	}
+
+	&__arrows {
+		display: none;
+		position: absolute;
+		width: 95%;
+		bottom: 45%;
+		justify-content: space-between;
+
+		@media screen and (max-width: $mobile-width) {
+			display: flex;
+		}
 	}
 }
 .card {
@@ -41,5 +82,19 @@
 
 	& > img {
 		border-radius: 16px;
+	}
+
+	& > img:nth-child(1) {
+		@media screen and (max-width: $mobile-width) {
+			display: none;
+		}
+	}
+
+	& > img:nth-child(2) {
+		display: none;
+
+		@media screen and (max-width: $mobile-width) {
+			display: block;
+		}
 	}
 }
