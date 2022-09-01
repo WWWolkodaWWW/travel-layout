@@ -350,6 +350,10 @@ input, textarea {
 }
 
 html {
+  scroll-behavior: smooth;
+}
+
+html {
   font-size: 10px;
 }
 
