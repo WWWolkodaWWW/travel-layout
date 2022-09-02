@@ -18,18 +18,22 @@
 		row-gap: 2.5rem;
 		position: relative;
 
+		overflow-x: hidden;
+		max-width: calc(100vw - 20px);
+
 		@media screen and (max-width: $mobile-width) {
 			row-gap: 0;
 		}
 	}
 }
 .slider {
-    overflow-x: hidden;
-	max-width: calc(100vw - 20px);
+	justify-content: flex-start;
+    // overflow-x: hidden;
+	// max-width: calc(100vw - 20px);
 
 
 	@media screen and (max-width: $mobile-width) {
-		max-width: calc(100vw - 20px);
+		max-width: 360px;
 	}
 
 	&_title {
@@ -51,6 +55,7 @@
 
 		@media screen and (max-width: $mobile-width) {
 			justify-content: flex-start;
+			column-gap: 0;
 		}
 	}
 

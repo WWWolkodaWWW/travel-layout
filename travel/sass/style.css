@@ -802,6 +802,8 @@ h6 {
   align-items: center;
   row-gap: 2.5rem;
   position: relative;
+  overflow-x: hidden;
+  max-width: calc(100vw - 20px);
 }
 @media screen and (max-width: 390px) {
   .destinations__slider {
@@ -810,12 +812,11 @@ h6 {
 }
 
 .slider {
-  overflow-x: hidden;
-  max-width: calc(100vw - 20px);
+  justify-content: flex-start;
 }
 @media screen and (max-width: 390px) {
   .slider {
-    max-width: calc(100vw - 20px);
+    max-width: 360px;
   }
 }
 .slider_title {
@@ -838,6 +839,7 @@ h6 {
 @media screen and (max-width: 390px) {
   .slider__cards {
     justify-content: flex-start;
+    column-gap: 0;
   }
 }
 .slider__pagination {
