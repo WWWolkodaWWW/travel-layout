@@ -174,7 +174,40 @@
 				</div>
 			</div>			
 		</section>
+		<div class="popup">
+			<div class="popup__signUp">
+				<p class="signUp_heading">Create account</p>
+				<div class="signUp_wrapper">
+					<p class="signUp_inputHeading">E-mail</p>
+					<input class="input signUP_input" type="email" name="emain">
+				</div>
+				<div class="signUp_wrapper">
+					<p class="signUp_inputHeading">Password</p>
+					<input class="input signUP_input" type="password" name="password">
+				</div>	
+				<button class="btn btn_large btn_signIn" type="submit">Sign Up<span></span><span></span><span></span><span></span></button>
+				<p class="signUp_subHeading">Already have an account? <a href="#" class="signUp_link">Log in</a></p>
+			</div>
+			<div class="popup__logIn">
+				<p class="logIn_heading">Log in to your account</p>
+				<button class="btn btn_large btn_fb" type="submit"><img src="./assets/svg/face.svg" alt="facebook">Sign In with Facebook</button>
+				<button class="btn btn_large btn_google" type="submit"><img src="./assets/svg/google.svg" alt="facebook">Sign In with Google</button>
+				<p class="logIn_divider">or</p>
+				<div class="logIn_wrapper">
+					<p class="signUp_inputHeading">E-mail</p>
+					<input class="input signUP_input" type="email" name="emain">
+				</div>
+				<div class="logIn_wrapper">
+					<p class="signUp_inputHeading">Password</p>
+					<input class="input signUP_input" type="password" name="password">
+				</div>
+				<button class="btn btn_large btn_signIn" type="submit">Sign Up<span></span><span></span><span></span><span></span></button>
+				<a class="logIn_link" href="#">Forgot Your Password?</a>
+				<p class="signUp_subHeading">Don&#8217t have an account? <a href="#" class="signUp_link">Register</a></p>
+			</div>
+		</div>
 	</main>
+	
 	<footer class="footer" id="footer">
 		<div class="wrapper footer__content">
 			<p class="footer__copyright">All Rights Reserved © Travel Portal</p>
@@ -205,5 +238,6 @@
 	</footer>
 	<script src="./js/burger.js"></script>
 	<script src="./js/slider.js"></script>
+	<script src="./js/popup.js"></script>
 </body>
 </html>

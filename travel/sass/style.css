@@ -343,6 +343,7 @@ input, textarea {
   padding: 0;
   border: none;
   outline: none;
+  width: 100%;
 }
 
 :hover {
@@ -459,6 +460,15 @@ section {
     padding: 0.7rem 0.9rem;
   }
 }
+.btn_large {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  font-style: normal;
+  color: #FFFFFF;
+  padding: 1rem 0;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+}
 .btn_pagination {
   width: 20px;
   height: 20px;
@@ -482,10 +492,49 @@ section {
     background-position: 7px center;
   }
 }
+.btn_fb, .btn_google {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  font-style: normal;
+  font-family: "Red Hat Text", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1.5rem;
+}
+.btn_fb {
+  background-color: #1877F2;
+  color: #FFFFFF;
+  border-color: #1877F2;
+}
+.btn_fb:hover {
+  background-color: #1877F2;
+  color: #FFFFFF;
+}
+.btn_google {
+  background-color: #FFFFFF;
+  color: #0D606F;
+  border-color: #FFFFFF;
+}
+.btn_google:hover {
+  background-color: #FFFFFF;
+  color: #0D606F;
+}
 
 .arrow_left {
   opacity: 0.7;
   transform: rotate(-180deg);
+}
+
+.input {
+  height: 55px;
+  border-radius: 10px;
+  padding: 0 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  font-style: normal;
 }
 
 .header__burger {
@@ -958,6 +1007,94 @@ h6 {
 .story_link:hover {
   cursor: url(/assets/svg/cursor-orange.svg), auto;
   color: #F2785C;
+}
+
+.popup {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popup__signUp, .popup__logIn {
+  display: none;
+  background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.9rem;
+  font-style: normal;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2.5rem 4.5rem;
+  row-gap: 2.5rem;
+  max-width: 100%;
+  min-width: 650px;
+}
+.popup__signUp.popupActive, .popup__logIn.popupActive {
+  display: flex;
+}
+.signUp_wrapper,
+.logIn_wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.signUp_heading,
+.logIn_heading {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 3.8rem;
+  font-style: normal;
+  text-align: center;
+}
+.signUp_subHeading,
+.logIn_subHeading {
+  text-align: center;
+  border-top: 1px solid #0D606F;
+  padding-top: 2rem;
+}
+.signUp_divider,
+.logIn_divider {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  font-style: normal;
+  text-align: center;
+  position: relative;
+}
+.signUp_divider::before, .signUp_divider::after,
+.logIn_divider::before,
+.logIn_divider::after {
+  content: "";
+  position: absolute;
+  z-index: 6;
+  width: 45%;
+  height: 1px;
+  background-color: #0D606F;
+  top: 50%;
+}
+.signUp_divider::before,
+.logIn_divider::before {
+  left: 0;
+}
+.signUp_divider::after,
+.logIn_divider::after {
+  right: 0;
+}
+.signUp_link,
+.logIn_link {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+  font-style: normal;
+  text-decoration: underline;
+  text-align: center;
 }
 
 .footer {

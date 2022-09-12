@@ -111,6 +111,13 @@ section {
 		}
 	}
 
+	&_large {
+		@include font ($size: 2rem, $height: 2.6rem);
+		color: $color-light;
+		padding: 1rem 0;
+		box-shadow: $large-btn-shadow;
+	}
+
 	&_pagination {
 		width: 20px;
 		height: 20px;
@@ -136,6 +143,36 @@ section {
 			background-position: 7px center;
 		}
 	}
+
+	&_fb,
+	&_google {
+		@include font ($size: 2rem, $height: 2.6rem);
+		font-family: $font-additional;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		column-gap: 1.5rem;
+	}
+
+	&_fb {
+		background-color: #1877F2;
+		color: $color-light;
+		border-color: #1877F2;
+		&:hover {
+			background-color: #1877F2;
+			color: $color-light;
+		}
+	}
+
+	&_google {
+		background-color: $color-light;
+		color: $color-primary;
+		border-color: $color-light;
+		&:hover {
+			background-color: $color-light;
+			color: $color-primary;
+		}
+	}
 }
 
 .arrow {
@@ -144,6 +181,13 @@ section {
 		opacity: 0.7;
 		transform: rotate(-180deg);	
 	}
+}
+
+.input {
+	height: 55px;
+	border-radius: 10px;
+	padding: 0 2rem;
+	@include font ($size: 2rem, $weight: 700, $height: 2.6rem);
 }
 
 .header {
